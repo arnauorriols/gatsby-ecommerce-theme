@@ -1,5 +1,3 @@
-import type { Context } from "@netlify/edge-functions";
+export default () => new Response("Hello world");
 
-export default async (request: Request, context: Context) => {
-  console.log(request.headers);
-};
+export const config = { path: "/test" };
